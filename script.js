@@ -9,7 +9,7 @@ function randomQuote() {
         .then((data) => {
             quoteText.textContent = data.content;
             quoteTags.textContent = data.tags;
-            quoteAuthor.textContent = `Author ${data.author}`;
+            quoteAuthor.textContent = `Author: ${data.author}`;
         });
 }
 randomQuote();
